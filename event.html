@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이벤트 | 카카오뱅크</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이벤트 | 카카오뱅크</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation"></nav>
+  </header>
+  <main class="main">
+    <div class="event__inner">
+      <h2 class="event__title">이벤트</h2>
+      <ul class="tab-list" role="tablist">
+        <li id="ongoing__tab" role="tab" aria-controls="ongoing" aria-selected="true" tabindex="0">진행중 이벤트</li>
+        <li id="finished__tab" role="tab" aria-controls="finished" aria-selected="false" tabindex="0">종료된 이벤트</li>
+      </ul>
+      <section id="ongoing" role="tabpanel" aria-labelledby="ongoing__tab">
+        <h3 class="a11yHidden">진행중 이벤트</h3>
+        <ul class="ongoing__list">
+          <li class="ongoing__details">
+            <a href="https://event.kakaobank.com/p/cobrand_card?i=2105" target="_blank" title="새 창 열림">
+              <img src="./images/event_current_1.png" alt="제휴 신용카드 5월 이벤트 최대 32만원 혜택 증정" />
+              <strong class="title">제휴 신용카드 이용고객 대상 이벤트 (5월)</strong>
+              <em class="hashtag">#제휴신용카드 #혜택증정</em>
+              <span class="event__period">
+                <time datetime="2021-04-30">2021.04.30</time>
+                <span>~</span>
+                <time datetime="2021-05-31">2021.05.31</time>
+              </span>
+            </a>
+          </li>
+          <li class="ongoing__details">
+            <a href="https://www.kakaobank.com/events/85" target="_blank" title="새 창 열림">
+              <img src="./images/event_current_2.png" alt="지금 가입하면 매일 100명에게 랜덤주식 1만원" />
+              <strong class="title">한국투자증권 해외주식 투자 가입 이벤트</strong>
+              <em class="hashtag">#해외주식투자 #한국투자증권</em>
+              <span class="event__period">
+                <time datetime="2021-04-01">2021.04.01</time>
+                <span>~</span>
+                <time datetime="2021-05-31">2021.05.31</time>
+              </span>
+            </a>
+          </li>
+          <li class="ongoing__details">
+            <a href="https://event.kakaobank.com/p/card_benefit?i=season8" target="_blank" title="새 창 열림">
+              <img src="./images/event_current_3.png" alt="집콕 맞춤 혜택 카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌 8" />
+              <strong class="title">카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</strong>
+              <em class="hashtag">#체크카드 #캐시백 #시즌8</em>
+              <span class="event__period">
+                <time datetime="2021-02-01">2021.02.01</time>
+                <span>~</span>
+                <time datetime="2021-07-31">2021.07.31</time>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
