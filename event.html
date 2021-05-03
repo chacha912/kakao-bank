@@ -16,16 +16,18 @@
     <div class="event__inner">
       <h2 class="event__title">이벤트</h2>
       <ul class="tab-list" role="tablist">
-        <li id="ongoing__tab" role="tab" aria-controls="ongoing" aria-selected="true" tabindex="0">진행중 이벤트</li>
-        <li id="finished__tab" role="tab" aria-controls="finished" aria-selected="false" tabindex="0">종료된 이벤트</li>
+        <li id="ongoingTab" role="tab" aria-controls="ongoing" aria-selected="true" tabindex="0">진행중<span
+            class="desktop-text"> 이벤트</span></li>
+        <li id="finishedTab" role="tab" aria-controls="finished" aria-selected="false" tabindex="0">종료<span
+            class="desktop-text">된 이벤트</span></li>
       </ul>
-      <section id="ongoing" role="tabpanel" aria-labelledby="ongoing__tab">
+      <section id="ongoing" role="tabpanel" aria-labelledby="ongoingTab">
         <h3 class="a11yHidden">진행중 이벤트</h3>
-        <ul class="ongoing__list">
-          <li class="ongoing__details">
-            <a href="https://event.kakaobank.com/p/cobrand_card?i=2105" target="_blank" title="새 창 열림">
+        <ul class="event__list">
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
               <img src="./images/event_current_1.png" alt="제휴 신용카드 5월 이벤트 최대 32만원 혜택 증정" />
-              <strong class="title">제휴 신용카드 이용고객 대상 이벤트 (5월)</strong>
+              <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (5월)</strong>
               <em class="hashtag">#제휴신용카드 #혜택증정</em>
               <span class="event__period">
                 <time datetime="2021-04-30">2021.04.30</time>
@@ -34,10 +36,10 @@
               </span>
             </a>
           </li>
-          <li class="ongoing__details">
-            <a href="https://www.kakaobank.com/events/85" target="_blank" title="새 창 열림">
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
               <img src="./images/event_current_2.png" alt="지금 가입하면 매일 100명에게 랜덤주식 1만원" />
-              <strong class="title">한국투자증권 해외주식 투자 가입 이벤트</strong>
+              <strong class="event__details__title">한국투자증권 해외주식 투자 가입 이벤트</strong>
               <em class="hashtag">#해외주식투자 #한국투자증권</em>
               <span class="event__period">
                 <time datetime="2021-04-01">2021.04.01</time>
@@ -46,15 +48,68 @@
               </span>
             </a>
           </li>
-          <li class="ongoing__details">
-            <a href="https://event.kakaobank.com/p/card_benefit?i=season8" target="_blank" title="새 창 열림">
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
               <img src="./images/event_current_3.png" alt="집콕 맞춤 혜택 카카오뱅크 프렌즈 체크카드 캐시백 프로모션 시즌 8" />
-              <strong class="title">카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</strong>
+              <strong class="event__details__title">카카오뱅크 프렌즈 체크카드 매월 33,000원의 추가 혜택</strong>
               <em class="hashtag">#체크카드 #캐시백 #시즌8</em>
               <span class="event__period">
                 <time datetime="2021-02-01">2021.02.01</time>
                 <span>~</span>
                 <time datetime="2021-07-31">2021.07.31</time>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="finished" role="tabpanel" aria-labelledby="finishedTab">
+        <h3 class="a11yHidden">종료된 이벤트</h3>
+        <ul class="event__list">
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
+              <img src="./images/event_end_1.png" alt="증권사 주식계좌 개설 이벤트 주식계좌 개설하고 다양한 혜택도 받으세요!" />
+              <strong class="event__details__title">증권사 주식계좌 개설 이벤트 (3~4월)</strong>
+              <em class="hashtag">#주식계좌 #개설혜택</em>
+              <span class="event__period">
+                <time datetime="2021-03-01">2021.03.01</time>
+                <span>~</span>
+                <time datetime="2021-04-30">2021.04.30</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
+              <img src="./images/event_end_2.png" alt="제휴 신용카드 4월 이벤트 최대 31만원 혜택" />
+              <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (4월)</strong>
+              <em class="hashtag">#제휴신용카드 #혜택증정</em>
+              <span class="event__period">
+                <time datetime="2021-03-31">2021.03.31</time>
+                <span>~</span>
+                <time datetime="2021-04-30">2021.04.30</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
+              <img src="./images/event_end_3.png" alt="여기저기 흩어져있는 내 돈 가져오기" />
+              <strong class="event__details__title">여기저기 흩어져있는 내 돈 '가져오기' 이벤트</strong>
+              <em class="hashtag">#오픈뱅킹 #가져오기이벤트</em>
+              <span class="event__period">
+                <time datetime="2021-03-11">2021.03.11</time>
+                <span>~</span>
+                <time datetime="2021-04-10">2021.04.10</time>
+              </span>
+            </a>
+          </li>
+          <li class="event__details">
+            <a href="#" class="event__details__link" target="_blank" title="새 창 열림">
+              <img src="./images/event_end_4.png" alt="제휴 신용카드 3월 이벤트 최대 33만원 혜택" />
+              <strong class="event__details__title">제휴 신용카드 이용고객 대상 이벤트 (3월)</strong>
+              <em class="hashtag">#제휴신용카드 #혜택증정</em>
+              <span class="event__period">
+                <time datetime="2021-02-26">2021.02.26</time>
+                <span>~</span>
+                <time datetime="2021-03-31">2021.03.31</time>
               </span>
             </a>
           </li>
