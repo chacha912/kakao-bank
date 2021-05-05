@@ -1,21 +1,21 @@
-.header,
-.footer {
-    display: none;
+// .header,
+// .footer {
+//     display: none;
+// }
+
+.main {
+ background: rgb(248, 248, 248);
 }
 
 .event {
 
     &__inner {
-        padding: 0 em(20);
+        padding: em(30) em(20);
 
         @include desktop {
             @include boxFixed;
             max-width: 100%;
         }
-    }
-
-    @include tablet {
-        display: none;
     }
 
     &__title__wrapper {
@@ -24,7 +24,7 @@
     }
 
     &__title {
-        font-size: rem(24);
+        font-size: rem(23);
 
         @include tablet {
             display: none;
@@ -42,13 +42,39 @@
 
 .tab-list {
     @include flexbox;
+    color: $grayscaleGray2;
 
+    li {
+        cursor: pointer;
+    }
+
+    [aria-selected="true"] {
+        border-bottom: 2px solid $black;
+        color: $black;
+    }
+    
+    @include mobile {
+        font-weight: 700;
+        font-size: rem(15);
+
+        :nth-child(1) {
+            margin-right: em(25);
+        }
+    }
     @include tablet {
         width: 100%;
+        margin-bottom: em(20);
         justify-content: space-between;
+
+        li {
+            width: 49%;
+            text-align: center;
+            padding: em(10) 0 em(20);
+            font-size: rem(20);
+
+        }
     }
 }
-
 
 .desktop-text {
     @include mobile {
@@ -72,14 +98,11 @@
 
     @include tablet {
         width: 49%;
-
-        &:nth-child(2n + 2) {
-            margin-left: em(10);
-        }
     }
 
     &__link {
         @include flexbox(column, center)
+
     }
 
     &__hashtag {
@@ -93,11 +116,12 @@
         order: 1;
         line-height: 1.5;
         font-weight: 400;
+        font-size: rem(15);
     }
 
     &__period {
         order: 2;
-        font-size: rem(12);
+        font-size: rem(13);
         line-height: 1.5;
         margin-bottom: em(10);
         color: $grayscaleGray2;
