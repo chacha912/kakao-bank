@@ -2433,7 +2433,6 @@ button {
 .responsiveImg {
   max-width: 100%;
   height: auto;
-  /* IE10+ */
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .responsiveImg {
@@ -2724,6 +2723,9 @@ button {
     height: auto;
     border-radius: 24px;
     background: #fede22;
+  }
+  .gnb__depth1__btn.open-scraping::after {
+    display: none;
   }
   .gnb__depth2-wrap {
     position: absolute;
